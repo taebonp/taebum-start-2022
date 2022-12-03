@@ -1,0 +1,61 @@
+.welcome-header {
+    margin: 90px 0px; /* 웰컵 헤더 마진을 위아래로 90픽셀 좌우를 0픽셀을 준것*/
+    text-align: center; /* 텍스트 위치를 센터로 주고 */
+    display: flex; /*디스플레이는 플렉스로 */
+    flex-direction: column; /*플렉스로 줬기때문에 span-> 블럭으로 변환하기 위해 컬럼으로 */
+    align-items: center;
+}
+
+.welcome-header__title {
+    margin-bottom: 20px;
+    font-size: 21px;
+}
+
+.welcome-header__text {
+    width:50%;
+    opacity: 0.7;
+
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    margin:0px 30px;
+    
+}
+
+#login-form input {
+    border:none;
+    padding:15px 0px;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+#login-form input::placeholder {  /* 로그인 폼 안에 input 타입안에 플레이스홀더 글자 색깔 바꾸는법*/
+    color:rgba(0,0,0,0.4);
+}
+#login-form input:not([type="submit"]) { /*input type이 submit 아닐때  [] 이 사이에 쓰인것들은 특성 선택자 (attrubute selector)이다. */
+    transition: border-color 0.3s ease-in-out; /*애니메이션 효과 0.3초 타입*/
+    border-bottom: 1px solid rgba(0,0,0,0.2); /* rgba a는 투명도 */
+
+
+}
+
+#login-form input:focus { /* 포커스 : 누르면 색깔 바뀜 노랑색 */
+    border-color:var(--yellow); /*yellow 색상은 variable.css 따로 추가함 */
+}
+
+#login-form input[type="submit"] {
+    background-color: var(--yellow); /*타입 submit 버튼에 백그라운드 색깔 적용 */
+    cursor:pointer; /* 커서를 올리면 포인트 모양 변환 */
+    font-size: 16px;
+    padding:20px 0px;
+    border-radius: 10px;
+}
+
+#login-form a {
+    text-align: center;
+    text-decoration: none; /*밑줄 없애기 */
+    color:inherit; /* 영어로 상속은 인헤리트 아버지가 돌아가셨을때 아버지가 너에게 남긴것*/
+    font-size: 13px;
+}

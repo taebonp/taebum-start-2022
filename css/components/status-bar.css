@@ -1,0 +1,27 @@
+.status-bar{
+    display: flex;
+    justify-content: center; /*센터로 지정했기 때문에 중앙으로 몰린다.*/
+    padding:5px 3px;
+    position: fixed;
+    top:0;
+    width:100%;
+}
+
+.status-bar__column { /*내부 박스 범위 33퍼 왼쪽으로 몰려서 범위 벌어짐 왼쪽 위치할 박스는 왼쪽에 붙어서 정렬됨 */
+    width:33%;        
+}
+.status-bar__column:nth-child(2) { /*nth 스태터스 바 컬럼 클래스 안에 있는 2번째 태그를 플레스로 한담에 위치를 센터로 맞춤 이렇게 중앙으로. */
+    display:flex;
+    justify-content: center;
+}
+.status-bar__column:last-child { /* 위와 똑같이 컬럼 클래스 안에 있는 마지막 태그를 맨 마지막으로 위치시킨후 이미지를 센터로 맞춤.*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.status-bar__column .fa-battery-full { /*배터리 마진을 상하 0px 좌우 5px를 줌으로써 간격을 뛰움*/
+    margin:0px 5px;
+}
+.status-bar__column:first-child span { /* span태그 안에 있는 첫번째 No Service를 마진을 줘서 와이파이 이미지와 떨어트린다 */
+    margin-right:5px;
+}

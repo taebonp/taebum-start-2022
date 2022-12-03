@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="stylesheet" href="css/styles.css"> <!--link:css 하면 자동 완성된다.-->
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chats - Taebum  Clone</title>
+</head>
+<body>
+    <!-- 상태바 작업 start -->
+    <div>
+        <div class="status-bar"> <!--div 태그 status 부모 id를  바로 만들어줌 / id는 중복X ClASS 중복 가능-->
+                                 <!--BEM 활용할것 태그를 한눈에 보기 쉽게하기 위해.-->
+            <div class="status-bar__column"> <!-- status바의 첫번째 자식-->
+                <span>No Service</span>
+                <i class="fa-solid fa-wifi"></i>
+                 <!-- To Do: Wifi Icon (나중에 와이파이 이미지 추가)-->
+            </div> 
+
+            <div class="status-bar__column"> <!-- status바의 두번쨰 자식-->
+                <span>18:43</span>
+            </div> 
+
+            <div class="status-bar__column">  <!-- status바의 세번쨰 자식-->
+                <span>110%</span>
+                <i class="fa-solid fa-battery-full fa-lg"></i>
+                <i class="fa-solid fa-bolt-lightning"></i>
+                <!-- To Do: Battery ICON (나중에 배터리 이미지 추가)-->
+                <!-- Lightning Icon (나중에 번개모양 이미지 추가)-->
+            </div>
+        </div>
+    </div>
+     <!-- 상태바 작업 end -->
+
+     <!-- friends 헤더부분 작업 start-->
+    <header class="screen-header">
+        <h1 class="screen-header__title">Chats</h1>
+        <div class="screen-header__icons">
+            <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+            <span><i class="fa-regular fa-comment-dots fa-lg"></i></span>
+            <span><i class="fa-solid fa-music fa-lg"></i></span>
+            <span><i class="fa-solid fa-gear fa-lg"></i></i></span>
+        </div>
+    </header>
+    <!-- friends 헤더부분 작업 end-->
+
+
+
+      <!--바디 부분 프로필 사진 컬럼 2개 작업 start-->
+    <main class="main-screen">
+        <div class="user-component">
+            <div class="user-component__column">
+                <img src="screenshots/KakaoTalk_20221203_205256903.jpg" class="user-component__avatar user-component__avatar"/>
+                <div class="user-component__text">
+                <h4 class="user-component__title">박태범</h4>
+               <h6 class="user-component__subtitle">안녕하세요 코코아클론 999기 입니다.</h6>
+            </div>
+            </div>
+            <div class="user-component__column"></div>
+            </div>
+                </main>
+  <!--바디 부분 프로필 사진 컬럼 2개 작업 end-->
+    
+       
+    
+
+    <!-- friends 아이콘 작업 하단 start-->  
+       <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html">
+                    <i class="fa-regular fa-user fa-2x"></i></a></li>
+            <li class="nav_btn">
+                <a class="nav__link" href="chats.html">
+                    <span class="nav_notification">1</span>
+                    <i class="fa-solid fa-comment fa-2x"></i></a></li>
+            <li class="nav_btn">
+                <a class="nav__link" href="find.html">
+                    <i class="fa-solid fa-magnifying-glass fa-2x"></i></a></li>
+            <li class="nav_btn">
+                <a class="nav__link" href="more.html">
+                    <span class="nav_notification2"></span>
+                    <i class="fa-solid fa-ellipsis fa-2x"></i></a></li>
+        </ul>
+       </nav>
+     <!-- friends 아이콘 작업 하단 end-->
+
+    <script src="https://kit.fontawesome.com/86ef24a8f5.js" 
+        crossorigin="anonymous">
+        
+        </script>
+        <!-- 2022.12.02 토요일 폰트어썸에 이미지를 가져올때 나의 키트를 주소를 스크립트로 복사해서 가져와준다.--> 
+</body>
+</html>

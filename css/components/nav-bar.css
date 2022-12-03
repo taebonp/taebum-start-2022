@@ -1,0 +1,45 @@
+.nav { 
+    position: fixed; /*원하는곳에 뭔가가 계속 있기를 바란다면 포지션 fixed를 해줘야한다  */
+    bottom: 0;    /*아이콘들이 밑쪽으로 가야하니 바텀 0을 준다 */
+    width: 100%; /* 너비가 초기화 되므로 너비를 100퍼로 지정해준다*/
+    background-color: #f9f9fa;
+    padding:20px 50px; /* 위아래 20 좌우 40 지정*/
+    box-sizing: border-box;/*패딩을 좌우 50을 주게되면 자동적으로 내가 지정한 박스 크기가 자동으로 넓어질려고 하면 아이콘들이 다 밀릴수도 있기때문에 박스 사이즈 보더 사이즈라고 지정해야 안커진다.*/
+                           /*CSS가 contetn가 보일 부분을 늘리지 않을꺼라고 지정한것! */
+    border-top:1px solid rgba(121,121,121,0.2);
+}
+
+.nav__list {
+    display: flex; /*디스플레으를 플렉스로 해준다 */
+    justify-content: space-between;
+}
+.nav__link {
+    color:#2e363e;
+    position: relative; /*네비 링크 안에 자식 요소 포지션 위치를 지정해주기 위해서 부모를 포지션 relative를 지정해줘야한다. */
+}
+.nav_notification {
+    background-color: tomato;
+    width:30px;
+    height:30px;/*nav__노티피션은 span 태그이기 떄문에 높이 지정이 안된다 그러므로 밑에 display:black이라고 지정을 해줘야한다 중요함 */
+    display: flex; 
+    justify-content: center; /* 주축을 센터로 먼저 지정후 교차축을 가운데로 지정해주면 숫자가 원 가운데로 온다.*/
+    align-items: center; /*교차축을 가운데로 할려면 얼라인 아이템 센터라고 지정해주고 */
+    border-radius:15px; /*사각형을 원으로 만들고 싶다면 사각형 width 의 반값을 쓰면 된다 꿀팁 */
+    color:white;
+    font-weight: 600;
+    position: absolute;/* 포지션을 지정하면 메세지 모양이 원하는 방법으로 위치 시킬수있따 포지션 많은 태그들은 mdn 참고하자 */
+                       /*position:absolute 사용하기 위해 가장 가까운 relative를 가진 부모 기준으로 움직이게 하기위해 nav 노티피션을 감싸고있는 컨테이너 nav__link에 position:relative 지정해줘야한다. */
+    left:15px; /* 메세지 알림 포지션을 가운데로 위치시킨후 내가 알맞게 레프트랑 바텀을 조정해서 메세지 모양 위쪽으로 지정*/
+    bottom: 15px;
+}
+
+/* friends 페이지 하다 점3개 빨간색 점 디자인 */
+.nav_notification2 {
+    background-color: tomato;
+    display: flex;
+    width:6px;
+    height:6px;
+    border-radius: 3px;
+    position: absolute;
+    right:-5px;
+}
