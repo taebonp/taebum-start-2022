@@ -1,0 +1,22 @@
+.icon-row { 
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.icon-row__icon {
+    display: flex;
+    flex-direction: column; /*컬럼은 밑으로 다음줄로 오게끔 변환 */
+    align-items: center; /* 세로축과 교차축이 바꼇으니 얼라인 아이템을 센터로*/
+    
+}
+
+.icon-row__icon i {
+    font-size: 35px;
+    
+}
+
+.icon-row__icon span{
+    margin-top:18px;
+}

@@ -1,0 +1,11 @@
+.badge {
+    background-color: tomato;
+    width:30px;
+    height:30px;/*nav__노티피션은 span 태그이기 떄문에 높이 지정이 안된다 그러므로 밑에 display:black이라고 지정을 해줘야한다 중요함 */
+    display: flex; 
+    justify-content: center; /* 주축을 센터로 먼저 지정후 교차축을 가운데로 지정해주면 숫자가 원 가운데로 온다.*/
+    align-items: center; /*교차축을 가운데로 할려면 얼라인 아이템 센터라고 지정해주고 */
+    border-radius:15px; /*사각형을 원으로 만들고 싶다면 사각형 width 의 반값을 쓰면 된다 꿀팁 */
+    color:white;
+    font-weight: 600;
+}
