@@ -5,9 +5,9 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Setting - Taebum  Clone</title>
+    <title>chat w / n - Taebum  Clone</title>
 </head>
-<body>
+<body id="chat-screen">
     <!-- 상태바 작업 start -->
     <div>
         <div class="status-bar"> <!--div 태그 status 부모 id를  바로 만들어줌 / id는 중복X ClASS 중복 가능-->
@@ -35,16 +35,16 @@
   
      <header class="alt-header">
         <div class="alt-header__column">
-            <a href="more.html">
+            <a href="chats.html">
             <i class="fa-solid fa-angle-left fa-2x"></i>
         </a>
         </div>
         <div class="alt-header__column">
-            <h1 class="alt-header__title">Setting</h1>
+            <h1 class="alt-header__title">태범</h1>
         </div>
         <div class="alt-header__column">
             <span><i class="fa-solid fa-magnifying-glass fa-2x"></i></span>
-
+           <span><i class="fa-solid fa-bars fa-2x"></i></span> 
         </div>
      </header>
 
@@ -52,56 +52,50 @@
 
 
       <!--바디 부분 아이콘 이미지 4개 작업 start-->
-    <main class="main-screen">
-        <ul class="setting-list">
-            <li class="setting__setting">
-                <div class="settings_setting-clumn">
-                <i class="fa-sharp fa-solid fa-bullhorn"></i>
-                <span>Notices</span>
-            </div>
-            <div class="settings_setting-clumn"></div>
-            </li>
-            <li class="setting__setting">
-                <div class="settings__setting-clumn">
-                <i class="fa-solid fa-flask"></i>
-                <span>Kakao Lab</span>
-            </div>
-            <div class="settings__setting-clumn"></div>
-                </li>
-                <li class="setting__setting">
-                    <div class="settings__setting-clumn">
-                    <i class="fa-solid fa-circle-info"></i>
-                    <span>Version</span>
+    <main class="main-screen main-chat">
+                <div class="chats__timestamp">
+            화요일 11월 30일 2022
+        </div>
+
+        <div class="message-row">
+            <img src="file:///C:/Users/USER/Desktop/taebum-start-2022/screenshots/KakaoTalk_20221203_205256903.jpg">
+            <div class="message-row__content">
+                <span class="message_author">Taebum</span>
+                <div class="message__info">
+                    <span class="message__bubble">안녕 !</span>
+                    <span class="message__time">21:27</span>
                 </div>
-                <div class="settings__setting-clumn">Latext Version</div>
-                    </li>    
-        </ul>
+            </div>
+
+        </div>
+
+        <div class="message-row message-row--own">
+                <div class="message__info">
+                    <span class="message__bubble">안녕 !</span>
+                    <span class="message__time">21:27</span>
+                </div>
+            </div>
+
+        </div>
                  </main>
+                 <form class="reply">
+                    <div class="reply__cloumn">
+                        <i class="fa-regular fa-square-plus fa-lg"></i>
+                                                                  </div>
+                    <div class="reply__cloumn">
+                        <input type="text" placeholder="Write a meessage..">
+                        <i class="fa-regular fa-face-smile"></i>
+                        <button>
+                            <i class="fa-solid fa-arrow-up"></i>
+                        </button>
+                    </div>
+                 </form>
   <!--바디 부분 아이콘 4개 작업 end-->
     
        
     
 
-    <!-- friends 아이콘 작업 하단 start-->  
-       <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__btn">
-                <a class="nav__link" href="friends.html">
-                    <i class="fa-regular fa-user fa-2x"></i></a></li>
-            <li class="nav_btn">
-                <a class="nav__link" href="chats.html">
-                    <span class="nav_notification badge">1</span>
-                    <i class="fa-regular fa-comment fa-2x"></i></a></li>
-            <li class="nav_btn">
-                <a class="nav__link" href="find.html">
-                    <i class="fa-solid fa-magnifying-glass fa-2x"></i></a></li>
-            <li class="nav_btn">
-                <a class="nav__link" href="more.html">
-                    <span class="nav_notification2"></span>
-                    <i class="fa-solid fa-ellipsis fa-2x"></i></a></li>
-        </ul>
-       </nav>
-     <!-- friends 아이콘 작업 하단 end-->
+   
 
     <script src="https://kit.fontawesome.com/86ef24a8f5.js" 
         crossorigin="anonymous">
