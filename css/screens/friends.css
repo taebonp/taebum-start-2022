@@ -31,3 +31,26 @@
     color:rgba(0,0,0,0.5);
 }
 
+@keyframes hideSplashCreen {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden; /* 마우스에 걸리지 않게 빠져버리는거다 */
+    }
+}
+
+#splash-screen {
+    background-color: var(--yellow);
+    position: absolute;
+    height:100vh;
+    width:100vw; 
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 122px;
+    animation:  hideSplashCreen 0.3s ease-in-out forwards;
+    animation-delay: 2s;
+}
